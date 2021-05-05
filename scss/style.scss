@@ -1,0 +1,235 @@
+// Police
+@font-face {
+    font-family: 'varelaregular';
+    src: url('fonts/varela/varela-regular-webfont.woff2') format('woff2'),
+        url('fonts/varela/varela-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+//----------------------- Sur toutes les pages 
+
+body {
+    font-family: "varela", sans-serif;
+}
+
+h1 {
+    font-size: 2.3em;
+}
+
+//Logo
+#imageLogo {
+    height: 70%;    
+
+    img {
+        object-fit: contain;
+        padding-left: 7%;
+        padding-right: 7%;
+        max-width: 100%;
+    }
+}
+
+// Navbar
+.navbar {
+    display: flex;
+    padding-right: 10%;
+    font-size: large;
+    margin-top: -1%;
+
+    .nav-item {
+        margin-right: 65px;
+    }
+}
+
+// Title
+#title {
+    display: flex;
+    justify-content: center;
+    padding-top: 3%;
+
+    h1 {
+        width: 90%;
+        text-align: center;
+        background-color: #0B0CAC;
+        color: orange;
+        border-radius: 20px;
+    }
+}
+
+// Background
+.background {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #F17C58, #E94584, #24AADB, #27DBB1, #FFDC18, #FF3706);
+    background-size: 600% 100%;
+    animation: gradient 16s linear infinite;
+    animation-direction: alternate;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0%
+    }
+
+    100% {
+        background-position: 100%
+    }
+}
+
+// boutton
+.btn {
+    font-weight: bold;
+    color: #fff;
+    background-color: #FF5576;
+    border: none;
+    border-radius: 15px;
+}
+
+// Footer
+footer {
+    a {
+        color: #FF5576;
+    }
+
+    a:hover {
+        color: white;
+        text-decoration: none;
+    }
+}
+
+
+
+//------------- Page index ----------------------
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    justify-content: center;
+
+    .cardTeddy {
+        margin: 2%;
+        padding: 0;
+        border: black 1px solid;
+        border-radius: 4%;
+        overflow: hidden;
+
+        .imageours {
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            background: orange;
+
+            .nameours {
+                text-align: center;
+            }
+
+            .priceours {
+                font-size: 0.95em;
+            }
+        }
+    }
+}
+
+//------------- Page Teddy description
+
+.containerTeddy {
+    justify-content: center;
+
+    .cardTeddyDescription {
+        padding-left: 0;
+        padding-right: 0;
+
+        .card-horizontal {
+            // display: flex;
+            justify-content: center;
+           
+            .imgOurs {
+                display: flex;
+                justify-content: center;
+                padding: 0;                             
+
+                img {
+                    object-fit: cover;
+                    // border-radius: 40px 0 0 0;
+                }
+            }
+        }
+    }
+}
+
+
+//------------- Page panier 
+.h2-panier {
+    margin-left: 5%;
+    margin-top: 2%;    
+    color: white;
+}
+
+.panier_vide {
+    font-size: large;
+    font-weight: bolder;    
+}
+
+.global-list {
+    display: flex;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .panier-teddy {
+        padding: 1%;
+        flex-direction: row;
+        align-items: center;
+
+        &-image {
+            padding: 0;
+        }
+
+        &-card {
+            text-align: center;
+        }
+    }
+}
+
+.affichage-prix-panier {
+    font-size: large;
+}
+
+.formulaire {    
+    display: flex;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .formulaire-card {
+        border: 3px solid orange;
+        border-radius: 25px;
+    }
+
+    .btn-block {
+        margin-bottom: 15px;        
+    }
+}
+
+// Couleur de l'avertissement des infos manquantes dans formulaire
+.infoChampManquant {
+    color: red;
+    background-color: yellow;
+    border-radius: 5px;
+}
+
+
+//--------- Page confirmation ----------
+
+.confirmation {
+    padding-bottom: 5%;    
+
+    &-achat {
+        margin-left: auto;
+        margin-right: auto;
+        background-color: white;
+        border-radius: 2%;     
+    }
+}

@@ -1,0 +1,258 @@
+@font-face {
+  font-family: 'varelaregular';
+  src: url("fonts/varela/varela-regular-webfont.woff2") format("woff2"), url("fonts/varela/varela-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "varela", sans-serif;
+}
+
+h1 {
+  font-size: 2.3em;
+}
+
+#imageLogo {
+  height: 70%;
+}
+
+#imageLogo img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  padding-left: 7%;
+  padding-right: 7%;
+  max-width: 100%;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 10%;
+  font-size: large;
+  margin-top: -1%;
+}
+
+.navbar .nav-item {
+  margin-right: 65px;
+}
+
+#title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 3%;
+}
+
+#title h1 {
+  width: 90%;
+  text-align: center;
+  background-color: #0B0CAC;
+  color: orange;
+  border-radius: 20px;
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #F17C58, #E94584, #24AADB, #27DBB1, #FFDC18, #FF3706);
+  background-size: 600% 100%;
+  -webkit-animation: gradient 16s linear infinite;
+          animation: gradient 16s linear infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
+
+.btn {
+  font-weight: bold;
+  color: #fff;
+  background-color: #FF5576;
+  border: none;
+  border-radius: 15px;
+}
+
+footer a {
+  color: #FF5576;
+}
+
+footer a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .cardTeddy {
+  margin: 2%;
+  padding: 0;
+  border: black 1px solid;
+  border-radius: 4%;
+  overflow: hidden;
+}
+
+.container .cardTeddy .imageours {
+  height: 220px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.container .cardTeddy .card-body {
+  background: orange;
+}
+
+.container .cardTeddy .card-body .nameours {
+  text-align: center;
+}
+
+.container .cardTeddy .card-body .priceours {
+  font-size: 0.95em;
+}
+
+.containerTeddy {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.containerTeddy .cardTeddyDescription {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.containerTeddy .cardTeddyDescription .card-horizontal {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.containerTeddy .cardTeddyDescription .card-horizontal .imgOurs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+}
+
+.containerTeddy .cardTeddyDescription .card-horizontal .imgOurs img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.h2-panier {
+  margin-left: 5%;
+  margin-top: 2%;
+  color: white;
+}
+
+.panier_vide {
+  font-size: large;
+  font-weight: bolder;
+}
+
+.global-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.global-list .panier-teddy {
+  padding: 1%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.global-list .panier-teddy-image {
+  padding: 0;
+}
+
+.global-list .panier-teddy-card {
+  text-align: center;
+}
+
+.affichage-prix-panier {
+  font-size: large;
+}
+
+.formulaire {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.formulaire .formulaire-card {
+  border: 3px solid orange;
+  border-radius: 25px;
+}
+
+.formulaire .btn-block {
+  margin-bottom: 15px;
+}
+
+.infoChampManquant {
+  color: red;
+  background-color: yellow;
+  border-radius: 5px;
+}
+
+.confirmation {
+  padding-bottom: 5%;
+}
+
+.confirmation-achat {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  border-radius: 2%;
+}
+/*# sourceMappingURL=style.css.map */
